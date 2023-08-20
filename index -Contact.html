@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basith Nizam-personal website</title>
+    <link rel="icon" href="images/dp.jpeg" type="image/x-icon"/>
+    <link rel="stylesheet" href="style-contact.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+  <body style="background: #222e35;">
+    <header class=" bg-primary pe-3 pt-2 sticky-top z-index-0" >
+        <div class="row text-light container-fluid  " >
+            <div class="col-8 col-sm-9 col-md-6 col-lg-4  p-3 ps-5 d-flex mx-auto justify-content-center justify-content-lg-start " id="" >
+                <h2>Basith Nizam</h2>
+            </div>
+            <div class="col-4 col-sm-3 col-md-6 col-lg-8  p-3 bg-primary d-flex justify-content-end ">
+              <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+                <div class="container-fluid  ">
+                  <button class="navbar-toggler ms-auto  " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon  "></span>
+                  </button>
+                  <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                    <div class="navbar-nav ">
+                      <a class="nav-link text-light" href="index.html">Home</a>
+                      <a class="nav-link text-light" href="index services.html">Services</a>
+                      <a class="nav-link text-light" href="index services.html">Social Media</a>
+                      <a class="nav-link text-light" href="index accadamic.html">Acadamics</a>
+                      <a class="nav-link text-light" href="index -About.html">About</a>
+                      <a class="nav-link active text-light fw-bold" aria-current="page" href="index -Contact.html">Contact Us</a>
+
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            
+            </div>
+        </div>
+    </header>
+   
+    <main class="container text-light col-mid-6 container-fluid" style="min-height: 90vh;display:flex;flex-direction: column; justify-content: center;">
+      <div class="row align-items-center">
+        <div class=" d-flex p-4 justify-content-center ">
+          <h2><u>Message Me</u></h2>
+        </div>
+      </div>
+      <div class="input-group " >
+        <div class=" container-fluid pb-3 col-md-6 "  >
+          <form id="form" method="" role="form" class=" container-fluid" >
+            <div class="row">
+
+             <div class="col-md-12 my-1">
+               <div class="form-group">
+                 <input required type="text"  id="contact-name"  placeholder="Full Name" onblur="validateName() " >
+                 <span id="name-error"></span>
+               </div>
+             </div>
+
+             <div class="col-md-12 my-1">
+              <div class="form-group">
+                <input required type="text"  id="mobilenumber" placeholder="Your 10 Digit Mobile Number" onblur="validatenumber()" >
+                <span id="mobile-error"></span>
+              </div>
+             </div>
+      
+             <div class="col-md-12 my-1 ">
+                <div class="form-group">
+                   <input required type="email"   id="Email" placeholder="Your Email" onblur="validateemail()" >
+                   <span id="email-error"></span>
+                 </div>
+             </div> 
+             
+
+
+              <div class="col-md-12 my-1 ">
+               <div class="form-group1">
+                 <textarea required class="form-control" id="message" rows="5" placeholder="Message" id="contact-message" onblur="validatemessage()" ></textarea>
+                 <span id="message-error"></span>
+               </div>
+              </div>  
+
+
+
+              <div class="col-md-12 text-center my-1">
+               <div class="col-md-12 text-center w-100 ">
+                 <button onclick="return validateform()" type="submit"  class=" bg-info w-100 h-100" style="box-shadow: 0 .5rem .5rem rgb(0,0,0 ,0.9);" >Submit</button>
+                 <span id="submit-error"></span>
+               </div>
+             </div>
+          </form>
+        </div>
+         
+    </main>
+      
+      <footer class="py-3  bg-secondary">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3 ">
+        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-light">Home</a></li>
+        <li class="nav-item"><a href="index services.html" class="nav-link px-2 text-light">services</a></li>
+        <li class="nav-item"><a href="index social media.html" class="nav-link px-2 text-light"> Social Media</a>s</a></li>
+        <li class="nav-item"><a href="index accadamic.html" class="nav-link px-2 text-light">Acadamics</a></li>
+        <li class="nav-item"><a href="index -About.html" class="nav-link px-2 text-light">About</a></li>
+        <li class="nav-item"><a href="index -Contact.html" class="nav-link px-2 text-light">Contact Me</a></li>
+      </ul>
+      <p class="text-center text-light">© 2023 basith-nizam ,india</p>
+      </footer>
+        
+      
+
+
+      <script src="https://kit.fontawesome.com/83a009e891.js" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="script.js"></script>
+  </body>
+</html>
